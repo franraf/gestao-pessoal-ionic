@@ -52,8 +52,9 @@ dotnet new webapi -n GestaoPessoal.Api -o src/backend/GestaoPessoal.Api
 Exemplo para criar o frontend Ionic Angular:
 
 ```bash
-ionic start src/frontend blank --type=angular --capacitor
-``
+cd src
+ionic start frontend blank --type=angular --capacitor
+```
 
 > O comando de criação do Ionic pode fazer perguntas interativas e baixar dependências.
 
@@ -72,7 +73,7 @@ Outros plugins devem ser adicionados quando houver necessidade concreta, por exe
 - `@capacitor/network`: estado da conexão.
 - `@capacitor/camera`: captura de imagens.
 - `@capacitor/local-notifications`: notificações locais.
-- `@capacitor/secure-storage-plugin` ou alternativa mantida e auditada: segredos/tokens, após avaliar compatibilidade e manutenção.
+- Um plugin de armazenamento seguro mantido e compatível com a versão do Capacitor, após avaliar manutenção e suporte às plataformas desejadas.
 
 Para dados financeiros e funcionamento offline, prefira um banco local apropriado e defina uma estratégia explícita de sincronização. Não armazene senhas, tokens ou dados financeiros sensíveis em preferências sem proteção.
 
